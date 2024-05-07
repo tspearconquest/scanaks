@@ -44,3 +44,7 @@ kubectl get pods -A -o wide > k_pods_`date +%F_%H-%M-%S_%z`.txt
 
 #Create a dump of the events in the cluster.
 kubectl get events > k_get-events_`date +%F_%H-%M-%S_%z`.txt
+
+#Check the CPU/memory of the nodes
+kubectl top nodes
+
