@@ -3,7 +3,7 @@
 #This script will gather logs from an AKS cluster. The goal is to collect those logs for troubleshooting purposes.
 #This script is work in progress. It is developed in best effort.
 #
-#Author: Walter Lopez <walter.lopez@microsoft.com>
+#Author: Walter Lopez <walter.lopez[at]microsoft.com>
 #
 #TO DO
 # Validate that the required utilities are installed and suggested where to find them if not.
