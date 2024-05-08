@@ -53,3 +53,12 @@ kubectl top nodes > k_top_nodes_$NOW.txt
 #Check the CPU/memory used by the containers.
 kubectl top pods -A > k_top_pods_$NOW.txt
 
+#Check for all the Ingresses
+kubectl get ingress -A > k_ingress_$NOW.txt
+
+#Check for all the existing kubernetes Services
+kubectl get svc -A > k_services_$NOW.txt
+
+#Check for endpoints
+kubectl get endpoints -A > k_endpoints_$NOW.txt
+
