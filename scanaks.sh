@@ -24,9 +24,9 @@ read -p "Enter the AKS CLUSTER RESOURCE GROUP: " RESOURCE_GROUP
 # Prompt the user to enter the CLUSTER_NAME
 read -p "Enter the AKS CLUSTER NAME: " CLUSTER_NAME
 
-NOW=`date +%F_%H-%M-%S_%z`
+NOW=$(date +%F_%H-%M-%S_%z)
 
-RANDOMSTRING=`cat /dev/urandom | tr -dc '[:alpha:]' | fold -w ${1:-4} | head -n 1`
+RANDOMSTRING=$(cat /dev/urandom | LC_ALL=C tr -dc '[:alpha:]' | fold -w ${1:-4} | head -n 1)
 
 #A place for the logs
 #####################
